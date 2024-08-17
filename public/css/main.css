@@ -1,0 +1,38 @@
+body{
+    font-family: 'Lora', sans-serif;
+    background: linear-gradient(to right, #25bfee, #fed1c7);
+}
+.header{
+    background-color:  #333;
+    color: #fff;
+    padding: 10px;
+}
+.container{
+    max-width: 800px; 
+    margin: 0 auto;
+}
+main{
+    padding-top: 30px;
+}
+aside{
+    font-family: 'Lora',sans-serif;
+    background-color: whitesmoke;
+    padding: 15px;
+    padding-right: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+.article{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.article h2{
+    color: #007bff;
+}
+.nav-item.active .nav-link {
+    background-color: #007bff; /* Change this color to your desired highlight color */
+    color: #fff; /* Change this color to your desired text color */
+}

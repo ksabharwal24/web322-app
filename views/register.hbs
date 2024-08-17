@@ -1,0 +1,27 @@
+{{#if successMessage}}
+<div>
+    <strong>Success:</strong> {{successMessage}}
+    <a href="/login">Proceed to Log in</a>
+</div>
+{{else}}
+<form method="post" action="/register">
+    <div>
+        <input type="text" name="userName" placeholder="User Name" required value="{{userName}}">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="Password" required>
+    </div>
+    <div>
+        <input type="password" name="password2" placeholder="Confirm Password" required>
+    </div>
+    <div>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <button type="submit">Register</button>
+    {{#if errorMessage}}
+    <div>
+        <strong>Error:</strong> {{errorMessage}}
+    </div>
+    {{/if}}
+</form>
+{{/if}}
